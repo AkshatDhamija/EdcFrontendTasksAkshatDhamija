@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -18,7 +19,7 @@
         header {
             background-color: #333;
             color: white;
-            padding: 1rem;
+            padding: 1rem 0;
             text-align: center;
             position: fixed;
             width: 100%;
@@ -54,7 +55,7 @@
             color: white;
             padding: 4rem 2rem;
             text-align: center;
-            margin-top: 60px;
+            margin-top: 70px;
         }
 
         #hero h2 {
@@ -129,137 +130,64 @@
         footer a:hover {
             text-decoration: underline;
         }
-
-        /* Media Queries */
-        @media (max-width: 1200px) {
-            .projects-container {
-                gap: 1.5rem;
-            }
-
-            .project {
-                padding: 1.5rem;
-            }
-
-            #hero h2 {
-                font-size: 2rem;
-            }
-
-            #hero p {
-                font-size: 1.1rem;
-            }
-
-            #projects h2 {
-                font-size: 1.8rem;
-            }
-        }
-
-        @media (max-width: 992px) {
-            header nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            header nav ul li {
-                margin: 0.5rem 0;
-            }
-
-            #hero {
-                padding: 3rem 1.5rem;
-            }
-
-            #projects {
-                padding: 3rem 1.5rem;
-            }
-
-            .project {
-                max-width: 100%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            header {
-                padding: 0.5rem;
-            }
-
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            header nav ul li a {
-                font-size: 0.9rem;
-            }
-
-            #hero {
-                padding: 2.5rem 1rem;
-            }
-
-            #projects {
-                padding: 2.5rem 1rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            #hero h2 {
-                font-size: 1.5rem;
-            }
-
-            #hero p {
-                font-size: 1rem;
-            }
-
-            #projects h2 {
-                font-size: 1.5rem;
-            }
-
-            .projects-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .project {
-                padding: 1rem;
-                margin: 1rem 0;
-            }
-
-            footer {
-                padding: 0.5rem;
-            }
-        }
     </style>
 </head>
 <body>
-    <header>
+    <header class="fixed-top">
         <h1>My Portfolio</h1>
         <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#footer">Contact</a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>I am Akshat Dhamija, a sophomore in chemical engineering. My biggest passion is entrepreneurship and I love to work with startups and I'm even working on my own ventures.</p>
+    <section id="hero" class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2>Welcome to My Portfolio</h2>
+                <p>I am Akshat Dhamija, a sophomore in chemical engineering. My biggest passion is entrepreneurship and I love to work with startups and I'm even working on my own ventures.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="container py-5">
         <h2>My Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <h3>Karyama</h3>
-                <p>I made an app that helps in fundraising for charities. It is an interface provision for accountability. Two accountability partners come together to achieve their respective goals and the one that does not keep his word according to the details filled in their Karya contract loses a certain amount of money to the charities they chose from our anti karma bucket list.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card project">
+                    <div class="card-body">
+                        <h3 class="card-title">Karyama</h3>
+                        <p class="card-text">I made an app that helps in fundraising for charities. It is an interface provision for accountability. Two accountability partners come together to achieve their respective goals and the one that does not keep his word according to the details filled in their Karya contract loses a certain amount of money to the charities they chose from our anti karma bucket list.</p>
+                    </div>
+                </div>
             </div>
-            <div class="project">
-                <h3>Matknow</h3>
-                <p>Making a material selection software that could help RND teams decide on what materials to use for their engineering problem. Helping in cutting down extensive literature review and iterative simulation costs.</p>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card project">
+                    <div class="card-body">
+                        <h3 class="card-title">Matknow</h3>
+                        <p class="card-text">Making a material selection software that could help RND teams decide on what materials to use for their engineering problem. Helping in cutting down extensive literature review and iterative simulation costs.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer id="footer">
-        <p>Contact me at: <a href="mailto:example@example.com">akshat@karyama.com</a></p>
+        <p>Contact me at: <a href="mailto:akshat@karyama.com">akshat@karyama.com</a></p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
