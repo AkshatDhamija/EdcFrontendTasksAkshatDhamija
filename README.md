@@ -6,3 +6,5 @@ I completed all 5 stages in the front end task. Making an html website first the
 ![Screenshot (736)](https://github.com/user-attachments/assets/71b842d8-38a4-4af2-8f2c-82d446fc9261)
 ![Screenshot (737)](https://github.com/user-attachments/assets/fea8635d-ae67-4691-bdc9-6a5cc48e1588)
 ![Screenshot (739)](https://github.com/user-attachments/assets/6c126882-1036-4e1e-97d3-fa921227ce01)
+
+
