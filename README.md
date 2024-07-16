@@ -1,5 +1,5 @@
 # EdcTasksAkshatDhamija
-I completed all 5 stages in the front end task. Making an html website first then integrating it with boostrap css to design it better and make it user friendly. Then I made the website responsive with links and design. Used JS to include theme toggling and Caraousel for projects. I also added animations at last but it is not included in the screenshots below-
+I completed all 5 stages in the front end task. Making an html website first then integrating it with bootstrap css to design it better and make it user friendly. Then I made the website responsive with links and design. Used JS to include theme toggling and Caraousel for projects. I also added animations at last but it is not included in the screenshots below-
 
 ![Screenshot (732)](https://github.com/user-attachments/assets/aeab4a2f-9dd6-4c5f-b0f6-bd6d4336f001)
 ![Screenshot (731)](https://github.com/user-attachments/assets/7dce6b96-24bb-46ee-bdfd-955170b6abf0)
