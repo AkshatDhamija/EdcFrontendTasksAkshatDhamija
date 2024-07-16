@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: #f9f9f9;
+            color: #333;
         }
 
         header {
@@ -17,37 +20,97 @@
             color: white;
             padding: 1rem;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
 
         header nav ul {
             list-style: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
         }
 
         header nav ul li {
-            display: inline;
             margin: 0 1rem;
         }
 
         header nav ul li a {
             color: white;
             text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ff6347;
         }
 
         #hero {
-            background-color: #f4f4f4;
-            padding: 2rem;
+            background-color: #282c34;
+            color: white;
+            padding: 4rem 2rem;
             text-align: center;
+            margin-top: 60px;
+        }
+
+        #hero h2 {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
         }
 
         #projects {
-            padding: 2rem;
+            padding: 4rem 2rem;
+            background-color: #f4f4f4;
+        }
+
+        #projects h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
         }
 
         .project {
-            border: 1px solid #ccc;
-            padding: 1rem;
-            margin: 1rem 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .project p {
+            font-size: 1rem;
+            color: #666;
         }
 
         footer {
@@ -55,6 +118,16 @@
             color: white;
             text-align: center;
             padding: 1rem;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -77,13 +150,15 @@
 
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="project">
-            <h3>Karyama</h3>
-            <p>I made an app that helps in fundraising for charities. It is an interface provision for accountability. Two accountability partners come together to achieve their respective goals and the one that does not keep his word according to the details filled in their Karya contract loses a certain amount of money to the charities they chose from our anti karma bucket list.</p>
-        </div>
-        <div class="project">
-            <h3>Matknow</h3>
-            <p>Making a material selection software that could help RND teams decide on what materials to use for their engineering problem. Helping in cutting down extensive literature review and iterative simulation costs.</p>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Karyama</h3>
+                <p>I made an app that helps in fundraising for charities. It is an interface provision for accountability. Two accountability partners come together to achieve their respective goals and the one that does not keep his word according to the details filled in their Karya contract loses a certain amount of money to the charities they chose from our anti karma bucket list.</p>
+            </div>
+            <div class="project">
+                <h3>Matknow</h3>
+                <p>Making a material selection software that could help RND teams decide on what materials to use for their engineering problem. Helping in cutting down extensive literature review and iterative simulation costs.</p>
+            </div>
         </div>
     </section>
 
